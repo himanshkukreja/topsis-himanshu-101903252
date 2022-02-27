@@ -7,6 +7,8 @@ class topsis():
         self.w=weights
         self.i=impacts
 
+
+
     def gettopsisResult(self):
 
         new_data = self.data.values[:,1:]
@@ -51,3 +53,23 @@ class topsis():
         self.data['Rank'] = ranks
         return self.data
 
+    def gettopsisScore(self):
+        return self.data['Topsis Score']
+
+    def gettopsisRank(self):
+        return self.data['Rank']
+
+    def convert_topsis_to_csv(self):
+        self.data.to_csv("topsis_otput_by_himanshu_101903252.csv")
+
+
+
+
+
+data = pd.read_csv("101903252-data.csv")
+weights = [1,1,1,1,1]
+impacts =['+','-','+','-','+']
+result = topsis(data,weights,impacts).gettopsisResult()
+print(topsis(data,weights,impacts).gettopsisScore())
+print(result)
+topsis(data,weights,impacts).convert_topsis_to_csv()

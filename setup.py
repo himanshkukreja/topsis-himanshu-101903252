@@ -1,8 +1,8 @@
 from distutils.core import setup
 setup(
-  name = 'lib',         # How you named your package folder (MyLib)
-  packages = ['lib'],   # Chose the same as "name"
-  version = '0.1',      # Start with a small number and increase it with every change you make
+  name = 'topsis_himanshu_101903252',         # How you named your package folder (MyLib)
+  packages = ['topsis_himanshu_101903252'],   # Chose the same as "name"
+  version = '0.1.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'This is a module for topsis (Technique for Order of Preference by Similarity to Ideal Solution)',   # Give a short description about your library
   author = 'Himanshu Kukreja',                   # Type in your name
